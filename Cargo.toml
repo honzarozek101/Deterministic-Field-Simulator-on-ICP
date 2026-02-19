@@ -1,0 +1,20 @@
+[package]
+name = "field_engine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+ic-cdk = "0.13"
+ic-cdk-macros = "0.9"
+candid = "0.10"
+sha2 = "0.10"
+
+[profile.release]
+lto = true
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
+strip = true
