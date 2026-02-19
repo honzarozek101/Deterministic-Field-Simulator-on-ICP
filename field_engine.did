@@ -1,0 +1,8 @@
+service : {
+  "init_engine": (nat32, nat64, float64) -> ();
+  "tick": (nat32) -> ();
+  "get_step": () -> (nat64) query;
+  "get_dim": () -> (nat32) query;
+  "get_hash": () -> (vec nat8) query;
+  "get_field_slice": (nat32, nat32, nat32, nat32) -> (vec float64) query;
+}
