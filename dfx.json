@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "canisters": {
+    "field_engine": {
+      "type": "rust",
+      "package": "field_engine",
+      "candid": "field_engine.did"
+    }
+  }
+}
